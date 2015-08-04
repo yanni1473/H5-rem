@@ -1,0 +1,30 @@
+html, body, p, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+@width: 100%;
+@color: #6fffca;
+@fontSize: 100rem;
+@scale: 0.5;
+.Hpx2rem(@designSize) {
+    height: @designSize/@fontSize*@scale;
+}
+
+.Wpx2rem(@designSize) {
+    width: @designSize/@fontSize*@scale;
+}
+
+.px2rem(@prop,@designSize) {
+    @{prop}: @designSize/@fontSize*@scale;
+}
+
+html {
+    font-size: 100px;
+    -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-smoothing: antialiased;
+}
+.swiper-slide{
+width:@width;
+.Hpx2rem(1008);
+background: url(img/headbg.jpg) no-repeat top center;
+}
